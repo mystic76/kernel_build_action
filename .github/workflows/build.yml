@@ -24,4 +24,6 @@ jobs:
           disable-lto: true
           anykernel3: true
           nethunter: true
+          anykernel3-url: https://github.com/mystic76/AnyKernel3
+          
           
