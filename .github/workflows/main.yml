@@ -28,16 +28,13 @@ jobs:
     - name: Build Kernel
       uses: ./
       with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/mystic76/device_xiaomi_unified-kernel
+          kernel-branch: android13-5.15-lts
+          config: chickernel_defconfig
           arch: arm64
-          aosp-gcc: true
-          aosp-clang: true
           ksu: true
           ksu-version: main
-          android-version: 12
-          aosp-clang-version: r383902
           disable-lto: true
           anykernel3: true
+          anykernel3-url: https://github.com/mystic76/AnyKernel3
+          nethunter: true
